@@ -1,0 +1,46 @@
+#result{
+    display: none;
+    background: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#share-result{
+    background: whitesmoke;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+.resultName{
+    font-size: 26px;
+}
+
+.resultDesc{
+    font-size: 22px;
+}
+  
+.kakao{
+    color: black;
+    background-color: #fee500;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus{ /*버튼위에 마우스가 올라갔을 때, 버튼이 클릭 됐을 때*/
+    background-color: pink;
+    color: whitesmoke;
+}
+
+.gohome{
+    color: black;
+    background-color: #fee500;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+}
+.gohome:hover, .gohome:focus{ /*버튼위에 마우스가 올라갔을 때, 버튼이 클릭 됐을 때*/
+    background-color: pink;
+    color: whitesmoke;
+}
