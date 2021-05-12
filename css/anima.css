@@ -27,3 +27,18 @@
     animation: fadeOut;
     animation-duration: 0.5s;
 }
+
+@keyframes movingA {
+    from {margin-left: 100%;}
+    to {margin-left: 0%;}
+}
+
+@-webkit-keyframes movingA {
+    from {margin-left: 100%;}
+    to {margin-left: 0%;}
+}
+
+.movingA{
+    animation: monvingA;
+    animation-duration: 0.5s;
+}

@@ -4,6 +4,7 @@
     width: 80%;
     text-align: center;
     border-radius: 20px;
+    font-family: 'Cute Font', cursive;
 }
 
 #share-result{
@@ -11,9 +12,11 @@
     width: 80%;
     text-align: center;
     border-radius: 20px;
+    font-family: 'Cute Font', cursive;
 }
-.resultName{
-    font-size: 26px;
+.resultname{
+    font-size: 27px;
+    font-weight: bold;
 }
 
 .resultDesc{
@@ -21,17 +24,23 @@
 }
   
 .kakao{
-    color: black;
-    background-color: #fee500;
-    font-size: 20px;
-    border: 0px;
-    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    height: 46px;
+    width: 46px;
+    background-image: url("../img/kakao.png");
+    background-size: cover;
 }
 
-.kakao:hover, .kakao:focus{ /*버튼위에 마우스가 올라갔을 때, 버튼이 클릭 됐을 때*/
+
+.kakao:hover, .kakao:focus{ 
+    /*
     background-color: pink;
     color: whitesmoke;
+    */
+    transform: translate(0, -10px);
 }
+
 
 .gohome{
     color: black;
@@ -43,4 +52,16 @@
 .gohome:hover, .gohome:focus{ /*버튼위에 마우스가 올라갔을 때, 버튼이 클릭 됐을 때*/
     background-color: pink;
     color: whitesmoke;
+}
+
+#ecoDesc{
+    display: none;
+    width: 80%;
+    font-family: 'Black Han Sans', cursive;
+}
+#sns{
+    display: none;
+    width: 80%;
+    font-family: 'Black Han Sans', cursive;
+    font-size: 20px;
 }

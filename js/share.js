@@ -1,11 +1,11 @@
-const url = 'https://cookielovetype.netlify.app/';
+const url = 'https://iluvearth.netlify.app/';
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
   var resultAlt = resultImg.firstElementChild.alt;
-  const shareTitle = '쿠키 연애유형';
+  const shareTitle = '나의 환경 유형';
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/' + (resultAlt+1) + '.png';
+  const shareImage = url + 'img/' + resultAlt + '.png';
   const shareURL = url + 'page/result' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
@@ -25,7 +25,7 @@ function setShare(){
         title: '결과확인하기',
         link: {
           mobileWebUrl: shareURL,
-          webUrl: shareURL
+          webUrl: shareURL,
         },
       },
     ]

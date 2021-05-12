@@ -1,7 +1,9 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 12;
+const ecoDesc = document.querySelector('#ecoDesc');
+const sns = document.querySelector('#sns');
+const endPoint = 9;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0];
 
 function calResult(){
@@ -16,7 +18,7 @@ function setResult(){
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = 'img/'+(point+1)+'.png';
+  var imgURL = 'img/'+point+'.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
@@ -24,6 +26,7 @@ function setResult(){
 
   const resultDesc = document.querySelector('.resultDesc');
   resultDesc.innerHTML = infoList[point].desc;
+
 }
 
 function goResult(){
@@ -32,9 +35,15 @@ function goResult(){
   setTimeout(() => {
     result.style.WebkitAnimation = "fadeIn 1s";
     result.style.animation = "fadeIn 1s";
+    ecoDesc.style.WebkitAnimation = "fadeIn 1s";
+    ecoDesc.style.animation = "fadeIn 1s";
+    sns.style.WebkitAnimation = "fadeIn 1s";
+    sns.style.animation = "fadeIn 1s";
     setTimeout(() => {
       qna.style.display = "none";
       result.style.display = "block";
+      ecoDesc.style.display = "block";
+      sns.style.display= "block";
     },450)
   },false);
 
@@ -67,6 +76,10 @@ function addAnswer(answerText, qIdx, idx){
       for(let i = 0; i< children.length; i++){
         children[i].style.display = 'none';
       }
+      if(select[6]==1 || qIdx==8){
+        goResult();
+        return 0;
+      }
       goNext(++qIdx);
     },450)
   },false);
@@ -84,6 +97,8 @@ function goNext(qIdx){
   }
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint)*(qIdx+1)+'%';
+  var count = document.querySelector('.qCount');
+  count.innerHTML = qIdx+1+'/'+endPoint;
 }
 
 var doubleSubmitFalg = false;
