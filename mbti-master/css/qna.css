@@ -1,0 +1,44 @@
+#qna{
+  display: none;
+}
+
+.qBox{
+  background-color: white;
+  text-align: left;
+  border-radius: 20px;
+  font-size: 24px;
+  width: 80%;
+}
+
+.answerList{
+  background-color: rgb(247, 247, 247);;
+  border-radius: 20px;
+  display: block; /*버튼 한줄에 한개씩*/
+  width: 80%;
+  border: 0px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.answerList:hover, .answerList:focus{ /*버튼위에 마우스가 올라갔을 때, 버튼이 클릭 됐을 때*/
+  background-color: pink;
+  color: whitesmoke;
+}
+
+.status{
+  height: 10px;
+  width: 80%;
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.statusBar{
+  height: 100%;
+  border-radius: 8px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+  background: #f39189; /* Old browsers */
+}
+
+.qCount{
+  font-size: 22px;
+}
